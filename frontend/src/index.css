@@ -1,0 +1,241 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* General */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Product Card */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.product-image-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.product-image {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+/* Category Card */
+.category-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Footer */
+.footer-links .list-group-item a {
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-links .list-group-item a:hover {
+  color: #0d6efd !important;
+  padding-left: 5px;
+}
+
+.social-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  color: #0d6efd !important;
+}
+
+.bg-darker {
+  background-color: #1a1a1a;
+}
+
+.payment-icon {
+  transition: transform 0.3s ease;
+}
+
+.payment-icon:hover {
+  transform: translateY(-3px);
+}
+
+/* Banner */
+.carousel-caption-custom {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: left;
+  padding: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Login */
+.login-form label {
+  font-weight: 500;
+}
+
+/* Cart & Checkout */
+.cart-item {
+  transition: background-color 0.3s ease;
+}
+
+.cart-item:hover {
+  background-color: #f8f9fa;
+}
+
+.cart-quantity-input {
+  max-width: 80px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-caption-custom {
+    position: relative;
+    background: #343a40;
+    padding: 20px 0;
+  }
+}
+
+/* Transitions */
+.transition-transform {
+  transition: transform 0.3s ease;
+}
+
+/* Hover effects */
+.hover-primary:hover {
+  color: #0d6efd !important;
+}
+
+/* Utility classes */
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.object-fit-contain {
+  object-fit: contain;
+}
+
+/* Add styles for placeholder images */
+img.placeholder {
+  background-color: #e9ecef;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+}
+
+/* Animation for loading */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ProductDetail Styles */
+.main-product-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  background-color: #f8f9fa;
+}
+
+.main-image-container {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-thumbnails img {
+  object-fit: cover;
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.image-thumbnails img:hover {
+  transform: scale(1.05);
+  border-color: #0d6efd;
+}
+
+.image-thumbnails .selected-thumbnail {
+  border-color: #0d6efd;
+  border-width: 2px;
+}
+
+.price-display {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.ratings .text-warning {
+  color: #ffc107;
+}
+
+.product-description {
+  border-top: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+  padding: 1rem 0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
