@@ -358,4 +358,3 @@ const Cart = ({
 };
 
 export default Cart;
-// Xuất component Cart để sử dụng ở nơi khác trong ứng dụng

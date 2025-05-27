@@ -196,4 +196,4 @@ const Banner = () => {
   );
 };
 
-export default Banner; // Xuất component Banner để có thể import và sử dụng ở component khác
+export default Banner;

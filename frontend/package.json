@@ -15,6 +15,7 @@
     "axios": "^1.9.0",
     "bootstrap": "^5.3.6",
     "date-fns": "^2.30.0",
+    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-confirm-alert": "^3.0.6",
@@ -31,7 +32,8 @@
     "start": "react-scripts start",
     "build": "GENERATE_SOURCEMAP=true react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
